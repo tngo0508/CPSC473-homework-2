@@ -43,13 +43,13 @@ function initializeEvents() {
         if (current <= 0) {
           current = 5;
         }
-        thumb = thumbnails[(current - 1) % 5];
+        thumb = thumbnails[current - 1];
         current--;
       } else if (index == 6) {
         if (current >= 4) {
           current = -1;
         }
-        thumb = thumbnails[(current + 1) % 5];
+        thumb = thumbnails[current + 1];
         current++;
       }
       setDetailsFromThumb(thumb);
