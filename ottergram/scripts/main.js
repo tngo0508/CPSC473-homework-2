@@ -52,6 +52,9 @@ function initializeEvents() {
         thumb = thumbnails[current + 1];
         current++;
       }
+      else {
+        current = index;
+      }
       setDetailsFromThumb(thumb);
     });
   });
